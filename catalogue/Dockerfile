@@ -1,5 +1,5 @@
 FROM node:14
-RUN addgroup -G catalogue && adduser catalogue catalogue
+RUN addgroup -G catalogue && adduser -S catalogue catalogue
 RUN chown catalogue catalogue
 WORKDIR /app
 COPY package.json /app 
