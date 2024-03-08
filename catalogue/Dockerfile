@@ -5,4 +5,5 @@ WORKDIR /app
 COPY package.json /app 
 COPY server.js /app
 USER catalogue
+ENV MONGO=true
 CMD ["node", "/app/server.js"]
