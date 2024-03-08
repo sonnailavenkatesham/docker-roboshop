@@ -5,4 +5,4 @@ WORKDIR /app
 COPY package.json /app 
 COPY server.js /app
 USER catalogue
-CMD ["node", "server.js"]
+CMD ["node", "/app/server.js"]
